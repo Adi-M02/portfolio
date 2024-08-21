@@ -11,6 +11,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+footer {
+    font-family: 'Poppins', sans-serif;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -141,4 +148,118 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+/* Sections */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* Profile Section */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+/* .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+} */
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Icons */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Footer */
+
+
+.footer-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between items */
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    min-width: 10px;
+    margin: 10px;
+}
+
+.footer-item img {
+    max-width: 25px;  /* Adjust the size of the logos */
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        justify-content: center; /* Keep the items centered on smaller screens */
+    }
+
+    .footer-item {
+        min-width: 25px; /* Smaller minimum width to fit items horizontally */
+    }
+
+    .footer-item img {
+        max-width: 20px; /* Slightly smaller logos on smaller screens */
+    }
+
+    .footer-item p {
+        font-size: 13px; /* Adjust label size for smaller screens */
+    }
 }

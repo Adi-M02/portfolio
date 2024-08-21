@@ -6,20 +6,22 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/profile-pic.ico" />
 </head>
     <body>
         <nav id="desktop-nav">
-            <div class="logo">Adi Mukundan</div>
-            <div>
+            <a href="/">
+                <div class="logo">Adi M</div>
+            </a>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">CV</a></li>
                 </ul>
             </div>
         </nav>
         <nav id="hamburger-nav">
-            <div class="logo">Adi Mukundan</div>
+            <div class="logo">Adi M</div>
             <div class="hamburger-menu">
                 <div class="hamburger-icon" onclick="toggleMenu()">
                     <span></span>
@@ -27,12 +29,58 @@
                     <span></span>
                 </div>
                 <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>                    
+                    <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#resume" onclick="toggleMenu()">CV</a></li>                    
                 </div>
             </div>
         </nav>
+        <section id="profile">
+            <div class="section__text">
+                <p class="section__text__p1"> Hello, I'm</p>
+                <h1 class="title">Adi</h1>
+                <p class="section__text__p2">Computer Science and Mathematics</p>
+                <!-- <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                </div>
+                <div calss="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Download CV</button>
+                </div> -->
+                <!-- <div id="social-container">
+                    <img src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/adi-mukundan/'"
+                    />
+                    <img src="./assets/github.png" 
+                    alt="My Github profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/Adi-M02'"
+                    />
+                </div> -->
+
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <a href="mailto:adimukundancs@gmail.com" class="footer-item">
+                    <img src="assets/email.png" alt="Email">
+                    <p>adimukundancs@gmail.com</p>
+                </a>
+                <a href="https://github.com/Adi-M02" class="footer-item">
+                    <img src="assets/github.png" alt="Github">
+                    <p>Github</p>
+                </a>
+                <a href="https://www.linkedin.com/in/adi-mukundan/" class="footer-item">
+                    <img src="assets/linkedin.png" alt="LinkedIn">
+                    <p>LinkedIn</p>
+                </a>
+                <a href="tel:3196939559" class="footer-item">
+                    <img src="assets/phone.png" alt="Phone">
+                    <p>Phone</p>
+                </a>
+            </div>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
