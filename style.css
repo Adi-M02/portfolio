@@ -22,10 +22,6 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
-    color: rgb(85, 85, 85);
-}
-
 /* Transition */
 
 a, .btn {
@@ -69,7 +65,7 @@ a:hover {
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 /* Hamburger Menu */
@@ -153,11 +149,11 @@ a:hover {
 /* Sections */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
+    max-width: 63.5%; /* Adjust this value to match the navbar's width */
+    margin: 0 auto; /* Center the container */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1vh;
 }
 
 .section-container {
@@ -170,7 +166,6 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
 }
 
 /* .section__pic-container {
@@ -180,30 +175,64 @@ section {
     margin: auto 0;
 } */
 
-.section__text {
+.about {
     align-self: center;
     text-align: center;
 }
 
-.section__text p {
-    font-weight: 600;
+.about__title {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
 }
 
-.section__text__p1 {
-    font-size: 1.75rem;
+.about__p1  {
+    font-size: 1rem;
     margin-bottom: 1rem;
+    text-align: left;
+    padding-bottom: 1.5rem;
 }
 
-.title {
-    font-size: 3rem;
-    text-align: center;
+.about__experience {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 5px;
 }
 
-#socials-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+.experience__box {
+    display: flex;              /* Use flexbox to align the image and text side by side */
+    align-items: center;        /* Center the content vertically */
+    max-width: 700px;           /* Optional: limit the width of the box */
+    margin: 20px 0;          /* Center the box horizontally */
+    padding-bottom: 1rem;
+}
+
+.experience__box__img {
+    width: 100px;               /* Set the image width */
+    height: 100px;              /* Set the image height to create a square */
+    object-fit: cover;          /* Ensure the image covers the square without distortion */
+    margin-right: 20px;         /* Add space between the image and text */
+}
+
+.experience__name {
+    font-size: 1.3rem;          /* Set font size for the name */
+    font-weight: 400;           /* Set font weight for the name */
+    text-align: left;
+    align-self: flex-start;;
+}
+
+.experience__team {
+    font-size: 1.1rem;          /* Set font size for the name */
+    font-weight: 300;           /* Set font weight for the name */
+    text-align: left;
+    align-self: flex-start;
+    padding-bottom: 10px;
+}
+
+.experience__date {
+    font-size: 1rem;            /* Set font size for the date */
+    text-align: left;
+    font-weight: 200;
 }
 
 /* Icons */
