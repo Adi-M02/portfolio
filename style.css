@@ -154,6 +154,36 @@ section {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1vh;
+    min-height: 800px;
+}
+/* Responsive styling for tablets and smaller screens */
+@media (max-width: 1024px) {
+    section {
+        padding-left: 0.5rem; /* Reduce padding for smaller screens */
+        padding-right: 0.5rem;
+        padding-top: 2vh; /* Increase top padding for more spacing */
+        min-height: 600px; /* Reduce minimum height for smaller devices */
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    section {
+        padding-left: 0.5rem; /* Maintain reduced padding */
+        padding-right: 0.5rem;
+        padding-top: 3vh; /* Increase top padding */
+        min-height: 500px; /* Further reduce minimum height */
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+    section {
+        padding-left: 0.5rem; /* Maintain padding */
+        padding-right: 0.5rem;
+        padding-top: 4vh; /* Increase top padding for more spacing */
+        min-height: 400px; /* Further reduce minimum height */
+    }
 }
 
 .section-container {
@@ -161,12 +191,6 @@ section {
 }
 
 /* Profile Section */
-
-#profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-}
 
 .about {
     align-self: center;
@@ -233,8 +257,115 @@ section {
     font-weight: 200;
 }
 
-/* Footer */
+/* Projects Section */
 
+.projects__about {
+    align-self: center;
+    text-align: center;
+}
+
+.projects__about__title {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+
+.projects__about__p1  {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+
+/* Research Section */
+.research__about__title {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+.research__subheading {
+    font-size: 1.4rem;          /* Set font size for the name */
+    font-weight: 400;           /* Set font weight for the name */
+    text-align: left;
+    align-self: flex-start;
+    padding-bottom: 1rem;
+}
+
+.research__subsection {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.research__experience__title {
+    font-size: 1.3rem;          /* Set font size for the name */
+    font-weight: 300;           /* Set font weight for the name */
+    text-align: left;
+    align-self: flex-start;
+    padding-bottom: 1rem;
+}
+
+.research__experience__description {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 200;
+    padding-bottom: 1rem;
+}
+
+.research__sublist__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.left__text {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.right__text {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* CV */
+
+.cv__about__title {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.cv__pdf {
+    margin: 25px 0px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 800px;
+}
+
+@media (max-width: 768px) {
+    .cv__about__title {
+        font-size: 1.25rem; /* Smaller font size for tablets */
+        padding-bottom: 0.75rem; /* Adjust padding for smaller screens */
+    }
+
+    .cv__pdf {
+        min-height: 500px; /* Reduce the minimum height on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .cv__about__title {
+        font-size: 1rem; /* Further reduce font size for smartphones */
+        padding-bottom: 0.5rem; /* Further adjust padding */
+    }
+
+    .cv__pdf {
+        min-height: 300px; /* Further reduce the minimum height on smartphones */
+    }
+}
+/* Footer */
 
 .footer-container {
     display: flex;
