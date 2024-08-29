@@ -154,7 +154,6 @@ section {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1vh;
-    min-height: 800px;
 }
 /* Responsive styling for tablets and smaller screens */
 @media (max-width: 1024px) {
