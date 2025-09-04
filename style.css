@@ -215,45 +215,97 @@ section {
     padding-bottom: 5px;
 }
 
+/* Experiences */
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .experiences-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
+
 .experience__box {
-    display: flex;              /* Use flexbox to align the image and text side by side */
-    align-items: center;        /* Center the content vertically */
-    max-width: 700px;           /* Optional: limit the width of the box */
-    margin: 20px 0;          /* Center the box horizontally */
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;     /* top-align text with image */
+    max-width: 700px;
+    margin: 20px 0;
     padding-bottom: 1rem;
 }
 
 .experience__box__img {
-    width: 100px;               /* Set the image width */
-    height: 100px;              /* Set the image height to create a square */
-    object-fit: cover;          /* Ensure the image covers the square without distortion */
-    margin-right: 20px;         /* Add space between the image and text */
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    flex: 0 0 100px;
+    margin-top: 2px;             /* align with title baseline */
+}
+
+.box-text {
+    flex: 1;
+    text-align: left;            /* override any inherited centering */
 }
 
 .experience__name {
-    font-size: 1.3rem;          /* Set font size for the name */
-    font-weight: 400;           /* Set font weight for the name */
+    font-size: 1.3rem;
+    font-weight: 700;            /* stronger heading weight */
     text-align: left;
-    align-self: flex-start;;
+    margin: 0;
 }
 
 .experience__team {
-    font-size: 1.1rem;          /* Set font size for the name */
-    font-weight: 300;           /* Set font weight for the name */
+    font-size: 1.1rem;
+    font-weight: 300;
     text-align: left;
-    align-self: flex-start;
-    padding-bottom: 10px;
+    margin: 0.15rem 0 0;
+    color: #555;
 }
 
 .experience__date {
-    font-size: 1rem;            /* Set font size for the date */
-    text-align: left;
+    font-size: 1rem;
     font-weight: 200;
+    text-align: left;
+    margin: 0.15rem 0 0.35rem;
+    color: #555;
+}
+
+/* Bullets under each experience */
+.experience__bullets {
+    margin: 0.4rem 0 0;
+    padding-left: 1.25rem;       /* hanging indent */
+    list-style: disc;
+    list-style-position: outside;
+    text-align: left;
+    line-height: 1.45;
+}
+
+.experience__bullets li {
+    margin: 0.25rem 0;
+}
+
+.experience__bullets li::marker {
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Mobile tweaks for experiences */
+@media (max-width: 768px) {
+    .experience__box__img {
+        width: 64px;
+        height: 64px;
+        flex-basis: 64px;
+    }
+    .experience__name {
+        font-size: 1.15rem;
+    }
+    .experience__bullets {
+        padding-left: 1rem;
+    }
 }
 
 /* Projects Section */
@@ -284,8 +336,8 @@ section {
 }
 
 .research__subheading {
-    font-size: 1.4rem;          /* Set font size for the name */
-    font-weight: 400;           /* Set font weight for the name */
+    font-size: 1.4rem;
+    font-weight: 400;
     text-align: left;
     align-self: flex-start;
     padding-bottom: 1rem;
@@ -297,8 +349,8 @@ section {
 }
 
 .research__experience__title {
-    font-size: 1.3rem;          /* Set font size for the name */
-    font-weight: 300;           /* Set font weight for the name */
+    font-size: 1.3rem;
+    font-weight: 300;
     text-align: left;
     align-self: flex-start;
     padding-bottom: 1rem;
