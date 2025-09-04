@@ -9,34 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../assets/profile-pic.ico" />
 </head>
     <body>
-        <nav id="desktop-nav">
-            <a href="/">
-                <div class="logo">Adi M</div>
-            </a>
-                <ul class="nav-links">
-                    <li><a href="../research">Research</a></li>
-                    <li><a href="../projects">Projects</a></li>
-                    <li><a href="../cv">CV</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <a href="/">
-                <div class="logo">Adi M</div>
-            </a>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="../research" onclick="toggleMenu()">Research</a></li>
-                    <li><a href="../projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="../cv" onclick="toggleMenu()">CV</a></li>                     
-                </div>
-            </div>
-        </nav>
+        <div data-include="/partials/nav.html"></div>
         <section id="research">
             <div class="research__about">
                 <h1 class="research__about__title">Research</h1>

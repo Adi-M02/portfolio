@@ -9,38 +9,20 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/profile-pic.ico" />
 </head>
     <body>
-        <nav id="desktop-nav">
-            <a href="/">
-                <div class="logo">Adi M</div>
-            </a>
-                <ul class="nav-links">
-                    <li><a href="/research">Research</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/cv">CV</a></li>
-                </ul>
-            </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <a href="/">
-                <div class="logo">Adi M</div>
-            </a>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="../research" onclick="toggleMenu()">Research</a></li>
-                    <li><a href="../projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="../cv" onclick="toggleMenu()">CV</a></li>                  
-                </div>
-            </div>
-        </nav>
+        <div data-include="/partials/nav.html"></div>
         <section id="profile">
             <div class="about">
-                <h1 class="about__title">Hi, my name's Adi  </h1>
-                <p class="about__p1">I am a fourth year majoring in Computer Science and in Mathematics at the University of Iowa and I am currently an undergraduate researcher in <a href="https://cs.uiowa.edu/people/rahul-singh" target="_blank" rel="noopener noreferrer" >Dr. Rahul Singh's lab.</a> I am currently working on using social media as a tool to understand drug use. Take a look in the Research page for a bit more about my current and previous research experiences. I currently am learning more about how database mining techniques and LSTMs can be used to gain insights on how social media data can be organized.</p>
+                <h1 class="about__title">Hi, my name's Adi!</h1>
+                    <p class="about__p1">
+                    I'm a master's student in Computer Science at the University of Iowa and a researcher in the
+                    <a href="https://tintin.cs.uiowa.edu/?load=./Pages/home.html" target="_blank" rel="noopener noreferrer"><u>UIowa Biocomputing Lab</u></a> advised by Dr. Rahul Singh.
+                    I am focused on using AI and large language models for social good by surfacing meaningful clinical insights. Right now, I’m working on studying an underdiagnosed vocal disorder by modeling Reddit communities using word2vec and LLMs. <br><br>
+                    I graduated with honors from the University of Iowa with a B.S. in Computer Science, a B.S. in Mathematics, and a certificate in Artificial Intelligence Modeling & Simulation (AIMS). Previously, I have built production software at
+                    <a href="https://www.sw.siemens.com/en-US/" target="_blank" rel="noopener noreferrer"><u>Siemens Digital Industries</u></a>; developed a Unity environment for continuous monitoring to study lifeguard behavior at the <a href="https://attention-perception.lab.uiowa.edu/" target="_blank" rel="noopener noreferrer"><u>Attention &amp; Perception Lab</u></a> under
+                    Dr. Cathleen Moore and Michael Paavola, MSc; and worked on vehicle navigation and computer vision software to create an educational platform for robotics and deep learning at the
+                    <a href="https://dsri.uiowa.edu/" target="_blank" rel="noopener noreferrer"><u>Driving Safety Research Institute</u></a> under Dr. Chris Schwarz.
+                    </p>
+                
                 <h1 class="about__experience">Experience</h1>
                 <div class="experiences">
                     <div class="experience__box">
