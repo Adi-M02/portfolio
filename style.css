@@ -464,4 +464,20 @@ section {
     .footer-item p {
         font-size: 13px; /* Adjust label size for smaller screens */
     }
+    /* simple underlined text links for demos */
+    .research__textlink {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: inherit;                 /* match surrounding text color */
+    }
+    .research__textlink:hover {
+    color: grey;                    /* matches your global hover style */
+    text-decoration-color: rgb(181, 181, 181);
+    }
+
+    /* separator styling (you already have this; keep if not present) */
+    .research__sep {
+    color: #b5b5b5;
+    margin: 0 .35rem;
+    }
 }
